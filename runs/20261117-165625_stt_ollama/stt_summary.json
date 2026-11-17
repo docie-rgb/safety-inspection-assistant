@@ -1,0 +1,16 @@
+{
+  "method": "ollama",
+  "n_audio": 10,
+  "audio_is_real_recording": false,
+  "note": "합성 음성(TTS) 기준. 실제 현장 녹음의 정확도를 대표하지 않음.",
+  "corpus_cer": 0.05177993527508091,
+  "mean_cer": 0.04961476558187881,
+  "exact_transcripts": 3,
+  "stt_preserves_text_result": 8,
+  "stt_result_matches_gold": 7,
+  "text_result_matches_gold": 9,
+  "stt_device": "cpu",
+  "stt_model": "small",
+  "stt_elapsed_sec_total": 62.168390500002715,
+  "audio_sec_total": 66.13825
+}

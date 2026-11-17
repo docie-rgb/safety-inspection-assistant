@@ -1,0 +1,101 @@
+﻿case_id,difficulty,hard_tags,text,gold_codes,pred_codes,gold_categories,pred_categories,category_match,hazard_match,full_match,gold_insufficient,pred_insufficient,insufficient_match,suspected_fabrication,evidence_not_in_source,tp,fp,fn,elapsed_sec,is_ai_inference,error,error_reason
+C001,normal,,조립2라인 배전반 앞에 빈 박스랑 팔레트가 쌓여 있어서 배전반 문을 열 수가 없습니다.,ELEC_PANEL_BLOCKED,ELEC_PANEL_BLOCKED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.443735700000616,True,,
+C002,normal,,창고 배전반 바로 앞에 원자재 포대가 놓여 있어요.,ELEC_PANEL_BLOCKED,ELEC_PANEL_BLOCKED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,4.976869500000248,True,,
+C003,normal,,분전반 앞에 청소도구 카트를 세워 둬서 분전반 접근이 막혀 있습니다.,ELEC_PANEL_BLOCKED,ELEC_PANEL_BLOCKED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.276256099999955,True,,
+C004,normal,,프레스 옆 바닥에 깔린 전선 피복이 벗겨져서 안에 구리선이 보입니다.,ELEC_CABLE_DAMAGED,ELEC_CABLE_DAMAGED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.260919700000159,True,,
+C005,normal,,용접기 전원 케이블 중간이 찢어져서 절연테이프로 감아 놨는데 테이프가 다 떨어졌어요.,ELEC_CABLE_DAMAGED,ELEC_CABLE_DAMAGED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.4893018000002485,True,,
+C006,normal,,사출기 뒤쪽 케이블이 지게차에 눌렸는지 피복이 갈라져 있습니다.,ELEC_CABLE_DAMAGED,ELEC_CABLE_DAMAGED,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.788720300000932,True,,
+C007,normal,,컴프레서실 제어반 문이 열린 채로 있고 안쪽 단자가 그대로 보입니다.,ELEC_PANEL_OPEN,ELEC_PANEL_OPEN,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.280079100000876,True,,
+C008,normal,,분전반 커버가 떼어져 바닥에 놓여 있어요. 충전부가 노출돼 있습니다.,ELEC_PANEL_OPEN,ELEC_PANEL_OPEN,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.073939600000813,True,,
+C009,normal,,검사실 책상 밑에 멀티탭 하나에 또 멀티탭을 꽂아서 히터랑 장비 여러 개가 연결돼 있습니다.,ELEC_OVERLOAD,ELEC_OVERLOAD,전기,전기,True,True,True,False,False,True,False,0,1,0,0,6.360766899999362,True,,
+C010,normal,,"휴게실 멀티탭에 전기포트, 전자레인지, 커피머신이 한꺼번에 꽂혀 있고 멀티탭이 따뜻합니다.",ELEC_OVERLOAD,ELEC_OVERLOAD,전기,전기,True,True,True,False,False,True,False,0,1,0,0,5.552477200000794,True,,
+C011,normal,,자재창고 주통로에 철판 묶음이 내려져 있어서 사람이 옆으로 비켜 다녀야 합니다.,TRIP_WALKWAY_OBSTRUCTED,TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.149369700000534,True,,
+C012,normal,,포장라인 앞 보행통로에 빈 파렛트가 두 개 방치되어 있어요.,TRIP_WALKWAY_OBSTRUCTED,TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.32533390000026,True,,
+C013,normal,,가공동 통로에 에어호스가 가로질러 늘어져 있어 발에 걸립니다.,TRIP_WALKWAY_OBSTRUCTED,TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.351474600000074,True,,
+C014,normal,,출하장 비상구 쪽 통로에 반품 박스가 쌓여서 통로가 반쯤 막혔습니다.,TRIP_WALKWAY_OBSTRUCTED,TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.18450589999884,True,,
+C015,normal,,CNC 3호기 앞 바닥에 절삭유가 고여서 미끄럽습니다.,SLIP_FLOOR_WET,SLIP_FLOOR_WET,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.048705900000641,True,,
+C016,normal,,식당 입구 바닥에 물이 흥건해요. 아까 한 분 미끄러질 뻔했습니다.,SLIP_FLOOR_WET,SLIP_FLOOR_WET,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.273076299999957,True,,
+C017,normal,,유압유가 바닥에 번져 있어서 걸을 때 미끄러워요.,SLIP_FLOOR_WET,SLIP_FLOOR_WET,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.361034999999902,True,,
+C018,normal,,물류동 바닥 에폭시가 깨져서 움푹 파인 곳이 있습니다. 대차 바퀴가 걸려요.,TRIP_FLOOR_DAMAGED,TRIP_FLOOR_DAMAGED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.917492800001128,True,,
+C019,normal,,보행로 배수구 덮개가 들려 있어 단차가 생겼습니다.,TRIP_FLOOR_DAMAGED,TRIP_FLOOR_DAMAGED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.22508469999957,True,,
+C020,normal,,라인 옆 바닥 철판이 들떠서 턱이 생겼어요.,TRIP_FLOOR_DAMAGED,TRIP_FLOOR_DAMAGED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.682069299999057,True,,
+C021,normal,,세척실에 있는 20리터 말통 두 개에 아무 표시가 없어서 무슨 액체인지 모르겠습니다.,CHEM_LABEL_MISSING,CHEM_LABEL_MISSING,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.6085963000004995,True,,
+C022,normal,,도장실 선반에 옮겨 담은 시너 용기에 이름표가 없습니다.,CHEM_LABEL_MISSING,CHEM_LABEL_MISSING,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.287602099999276,True,,
+C023,normal,,실험실 시약병 몇 개 라벨이 떨어져 나갔어요.,CHEM_LABEL_MISSING,CHEM_LABEL_MISSING,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.646411100000478,True,,
+C024,normal,,약품창고 드럼통 아래에 액체가 흘러나와 고여 있습니다.,CHEM_LEAK_SUSPECTED,CHEM_LEAK_SUSPECTED,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.985746099999233,True,,
+C025,normal,,도금조 배관 연결부에서 액이 한 방울씩 떨어지고 있어요.,CHEM_LEAK_SUSPECTED,CHEM_LEAK_SUSPECTED,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.438207199998942,True,,
+C026,normal,,폐액통 옆면에 흘러내린 자국이 새로 생겼습니다.,CHEM_LEAK_SUSPECTED,CHEM_LEAK_SUSPECTED,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.265191899999991,True,,
+C027,normal,,도장 부스 옆 시너 통 뚜껑이 열린 채로 있어요.,CHEM_CONTAINER_OPEN,CHEM_CONTAINER_OPEN,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.533900200000062,True,,
+C028,normal,,세척제 통 마개를 안 닫고 퇴근했는지 아침에 와 보니 열려 있었습니다.,CHEM_CONTAINER_OPEN,CHEM_CONTAINER_OPEN,화학물질,화학물질,True,True,True,False,False,True,False,0,1,0,0,5.695765000000392,True,,
+C029,normal,,접착제 캔 뚜껑이 열려 있고 냄새가 많이 납니다.,CHEM_CONTAINER_OPEN,CHEM_CONTAINER_OPEN|CHEM_LEAK_SUSPECTED,화학물질,화학물질,True,False,False,False,False,True,False,0,1,1,0,6.139899900001183,True,,잘못 추가한 위험요인: CHEM_LEAK_SUSPECTED
+C030,normal,,연삭기 숫돌 덮개가 떼어진 상태로 돌아가고 있습니다.,MACH_GUARD_ISSUE,MACH_GUARD_ISSUE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,5.11958500000037,True,,
+C031,normal,,컨베이어 구동 체인 덮개가 빠져서 체인이 그대로 드러나 있습니다.,MACH_GUARD_ISSUE,MACH_GUARD_ISSUE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,4.969352599999183,True,,
+C032,normal,,벨트 풀리 방호커버 볼트가 빠져서 커버가 덜렁거립니다.,MACH_GUARD_ISSUE,MACH_GUARD_ISSUE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,5.189762300000439,True,,
+C033,normal,,2라인 비상정지 버튼을 눌렀는데 라인이 바로 안 멈췄습니다.,MACH_ESTOP_ISSUE,MACH_ESTOP_ISSUE,기계,기계,True,True,True,False,False,True,False,1,1,0,0,5.035495199999787,True,,근거 인용이 원문에 없음: 1건
+C034,normal,,포장기 비상정지 버튼 캡이 깨져 있고 눌러도 잘 안 들어가요.,MACH_ESTOP_ISSUE,MACH_ESTOP_ISSUE,기계,화재,False,True,False,False,False,True,False,0,1,0,0,4.868478700000196,True,,위험유형 불일치: 예측 ['화재'] / 정답 ['기계']
+C035,normal,,컨베이어 비상정지 줄(풀코드)이 끊어져 있습니다.,MACH_ESTOP_ISSUE,FIRE_FLAMMABLE_NEAR_IGNITION,기계,화재,False,False,False,False,True,False,False,0,0,1,1,4.990022699999827,True,,놓친 위험요인: MACH_ESTOP_ISSUE / 잘못 추가한 위험요인: FIRE_FLAMMABLE_NEAR_IGNITION / 위험유형 불일치: 예측 ['화재'] / 정답 ['기계'] / 정보부족 판정 불일치: 예측 True / 정답 False
+C036,normal,,사출기 5호기에서 아침부터 끼익거리는 소리가 계속 납니다.,MACH_ABNORMAL_NOISE,MACH_ABNORMAL_NOISE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,5.113067199999932,True,,
+C037,normal,,냉각수 펌프에서 평소보다 진동이 심하고 덜덜거리는 소리가 나요.,MACH_ABNORMAL_NOISE,MACH_ABNORMAL_NOISE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,5.074928,True,,
+C038,normal,,작업 중에 컴프레서에서 쇠 긁히는 소리가 간헐적으로 들립니다.,MACH_ABNORMAL_NOISE,MACH_ABNORMAL_NOISE,기계,기계,True,True,True,False,False,True,False,0,1,0,0,5.330689000000348,True,,
+C039,normal,,용접부스 국소배기 후드가 흡입을 거의 안 하는 것 같아요. 연기가 위로 안 빨려 들어갑니다.,VENT_LEV_MALFUNCTION,VENT_LEV_MALFUNCTION,환기,환기,True,True,True,False,False,True,False,0,1,0,0,5.614884599999641,True,,
+C040,normal,,도장부스 배기팬이 멈춰 있습니다.,VENT_LEV_MALFUNCTION,VENT_LEV_MALFUNCTION,환기,환기,True,True,True,False,False,True,False,0,1,0,0,4.970853599999828,True,,
+C041,normal,,세척조 위 배기덕트에 구멍이 뚫려 있어 흡입이 약합니다.,VENT_LEV_MALFUNCTION,VENT_LEV_MALFUNCTION,환기,환기,True,True,True,False,False,True,False,0,1,0,0,5.156891500000711,True,,
+C042,normal,,산소 용기가 체인 없이 벽에 그냥 세워져 있습니다.,GAS_CYLINDER_UNSECURED,GAS_CYLINDER_UNSECURED,가스,가스,True,True,True,False,False,True,False,0,1,0,0,4.785960000001069,True,,
+C043,normal,,아르곤 용기 세 개가 고정 없이 서 있고 하나는 기울어져 있어요.,GAS_CYLINDER_UNSECURED,GAS_CYLINDER_STORAGE|GAS_CYLINDER_UNSECURED,가스,가스,True,False,False,False,False,True,False,1,1,1,0,5.659439099999872,True,,잘못 추가한 위험요인: GAS_CYLINDER_STORAGE / 근거 인용이 원문에 없음: 1건
+C044,normal,,아세틸렌 용기를 고정대 없이 카트 옆에 세워 뒀습니다.,GAS_CYLINDER_UNSECURED,GAS_CYLINDER_UNSECURED,가스,가스,True,True,True,False,False,True,False,0,1,0,0,5.211924100000033,True,,
+C045,normal,,LPG 용기가 햇빛 드는 곳에 그대로 놓여 있습니다.,GAS_CYLINDER_STORAGE,GAS_CYLINDER_STORAGE,가스,가스,True,True,True,False,False,True,False,0,1,0,0,5.5355396999984805,True,,
+C046,normal,,산소 용기와 아세틸렌 용기가 칸막이 없이 붙어서 보관돼 있어요.,GAS_CYLINDER_STORAGE,GAS_CYLINDER_STORAGE,가스,가스|화학물질,False,True,False,False,False,True,False,0,1,0,0,5.161436200000026,True,,"위험유형 불일치: 예측 ['가스', '화학물질'] / 정답 ['가스']"
+C047,normal,,빈 질소 용기에 보호캡이 안 씌워져 있습니다.,GAS_CYLINDER_STORAGE,CHEM_CONTAINER_OPEN,가스,화학물질,False,False,False,False,False,True,False,0,0,1,1,4.9329778000010265,True,,놓친 위험요인: GAS_CYLINDER_STORAGE / 잘못 추가한 위험요인: CHEM_CONTAINER_OPEN / 위험유형 불일치: 예측 ['화학물질'] / 정답 ['가스']
+C048,normal,,보일러실 가스 배관 근처에서 가스 냄새가 납니다.,GAS_LEAK_SUSPECTED,GAS_LEAK_SUSPECTED,가스,가스,True,True,True,False,False,True,False,0,1,0,0,5.210987099999329,True,,
+C049,normal,,산소 레귤레이터 연결부에 비눗물 바르니 거품이 올라옵니다.,GAS_LEAK_SUSPECTED,CHEM_LEAK_SUSPECTED,가스,화학물질,False,False,False,False,False,True,False,0,0,1,1,5.112124100000074,True,,놓친 위험요인: GAS_LEAK_SUSPECTED / 잘못 추가한 위험요인: CHEM_LEAK_SUSPECTED / 위험유형 불일치: 예측 ['화학물질'] / 정답 ['가스']
+C050,normal,,주방 가스레인지 밸브 쪽에서 쉬익 소리와 냄새가 납니다.,GAS_LEAK_SUSPECTED,GAS_LEAK_SUSPECTED,가스,가스,True,True,True,False,False,True,False,0,1,0,0,5.243774900001881,True,,
+C051,normal,,소화기 앞에 자재가 쌓여서 소화기를 꺼낼 수 없습니다.,FIRE_EXTINGUISHER_ISSUE,FIRE_EXTINGUISHER_ISSUE,화재,화재,True,True,True,False,False,True,False,0,1,0,0,4.895792999999685,True,,
+C052,normal,,복도 소화기 압력게이지 바늘이 빨간 구간에 있습니다.,FIRE_EXTINGUISHER_ISSUE,FIRE_EXTINGUISHER_ISSUE,화재,화재,True,True,True,False,False,True,False,0,1,0,0,5.042695000000094,True,,
+C053,normal,,도장실 입구 소화기 거치대가 비어 있어요. 소화기가 없습니다.,FIRE_EXTINGUISHER_ISSUE,FIRE_EXTINGUISHER_ISSUE,화재,화재,True,True,True,False,False,True,False,0,1,0,0,5.116019699999015,True,,
+C054,normal,,용접하는 바로 옆에 시너 통과 걸레가 놓여 있습니다.,FIRE_FLAMMABLE_NEAR_IGNITION,FIRE_FLAMMABLE_NEAR_IGNITION,화재,화재,True,True,True,False,False,True,False,0,1,0,0,5.4052451999996265,True,,
+C055,normal,,그라인더 작업대 옆에 휘발유 통이 있어요. 불티가 튑니다.,FIRE_FLAMMABLE_NEAR_IGNITION,FIRE_FLAMMABLE_NEAR_IGNITION,화재,화재,True,True,True,False,False,True,False,0,1,0,0,5.296069899999566,True,,
+C056,normal,,보일러 옆에 폐유 묻은 걸레 더미를 쌓아 놨습니다.,FIRE_FLAMMABLE_NEAR_IGNITION,CHEM_CONTAINER_OPEN,화재,화학물질,False,False,False,False,False,True,False,0,0,1,1,6.140234199996485,True,,놓친 위험요인: FIRE_FLAMMABLE_NEAR_IGNITION / 잘못 추가한 위험요인: CHEM_CONTAINER_OPEN / 위험유형 불일치: 예측 ['화학물질'] / 정답 ['화재']
+C057,normal,,메자닌 가장자리 난간 한 칸이 빠져 있습니다.,FALL_OPENING_UNGUARDED,FALL_OPENING_UNGUARDED,추락,추락,True,True,True,False,False,True,False,0,1,0,0,4.802946799998608,True,,
+C058,normal,,설비 피트 덮개를 열어 놓고 주변에 표시나 펜스가 없어요.,FALL_OPENING_UNGUARDED,FALL_OPENING_UNGUARDED,추락,추락,True,True,True,False,False,True,False,0,1,0,0,5.36630359999981,True,,
+C059,normal,,옥상 채광창 주변에 안전망이나 난간이 없습니다.,FALL_OPENING_UNGUARDED,FALL_OPENING_UNGUARDED,추락,추락,True,True,True,False,False,True,False,0,1,0,0,5.711808699998073,True,,
+C060,normal,,선반 위 자재 꺼낼 때 쓰는 A형 사다리 다리 고무패킹이 빠져서 흔들립니다.,FALL_LADDER_UNSTABLE,FALL_LADDER_UNSTABLE,추락,추락,True,True,True,False,False,True,False,0,1,0,0,5.609219000001758,True,,
+C061,normal,,이동식 비계 바퀴 고정장치가 안 걸려 있어 밀립니다.,FALL_LADDER_UNSTABLE,FALL_LADDER_UNSTABLE,추락,추락,True,True,True,False,False,True,False,0,1,0,0,5.27452319999793,True,,
+C062,normal,,사다리 발판 하나가 휘어 있어요.,FALL_LADDER_UNSTABLE,FALL_LADDER_UNSTABLE,추락,추락,True,True,True,False,False,True,False,0,1,0,0,5.516689000000042,True,,
+C063,normal,,연삭 작업자가 보안경 없이 작업하고 있습니다.,PPE_NOT_WORN,PPE_NOT_WORN,보호구,보호구,True,True,True,False,False,True,False,0,1,0,0,5.19719090000217,True,,
+C064,normal,,도장 작업 중인 인원이 방독마스크를 안 쓰고 있어요.,PPE_NOT_WORN,PPE_NOT_WORN,보호구,보호구,True,True,True,False,False,True,False,0,1,0,0,6.246469800000341,True,,
+C065,normal,,프레스실에서 귀마개 안 하고 작업하는 사람이 있습니다.,PPE_NOT_WORN,PPE_NOT_WORN,보호구,보호구,True,True,True,False,False,True,False,0,1,0,0,5.439943600002152,True,,
+C066,normal,,조립1라인 순회 점검했는데 특이사항 없습니다.,NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.623426099999051,True,,
+C067,normal,,"창고 통로, 소화기, 배전반 확인했고 이상 없었습니다.",NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.7102041999969515,True,,
+C068,normal,,"가스 보관소 점검 완료, 이상 없음.",NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.462686799997755,True,,
+C069,normal,,오늘 포장라인 점검 결과 위험요인 발견되지 않았습니다.,NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.562789600000542,True,,
+C070,normal,,"사무동 비상구 정상 개방, 유도등 점등 확인했습니다.",NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.942214300001069,True,,
+C071,normal,,CNC 2호기 앞 바닥에 절삭유가 흘러 있고 칩 박스가 통로에 나와 있습니다.,SLIP_FLOOR_WET|TRIP_WALKWAY_OBSTRUCTED,SLIP_FLOOR_WET|TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐|화재,False,True,False,False,False,True,False,0,2,0,0,6.077437400002964,True,,"위험유형 불일치: 예측 ['넘어짐', '화재'] / 정답 ['넘어짐']"
+C072,normal,,용접부스 배기가 약하고 작업자가 용접면 없이 보안경만 쓰고 있어요.,PPE_NOT_WORN|VENT_LEV_MALFUNCTION,CHEM_LABEL_MISSING,보호구|환기,화학물질,False,False,False,False,True,False,False,0,0,1,2,5.285132799999701,True,,"놓친 위험요인: PPE_NOT_WORN,VENT_LEV_MALFUNCTION / 잘못 추가한 위험요인: CHEM_LABEL_MISSING / 위험유형 불일치: 예측 ['화학물질'] / 정답 ['보호구', '환기'] / 정보부족 판정 불일치: 예측 True / 정답 False"
+C073,normal,,세척제 통 뚜껑이 열려 있고 라벨도 없습니다.,CHEM_CONTAINER_OPEN|CHEM_LABEL_MISSING,CHEM_CONTAINER_OPEN|CHEM_LABEL_MISSING,화학물질,화학물질,True,True,True,False,False,True,False,0,2,0,0,5.879268600001524,True,,
+C074,normal,,"프레스 방호덮개가 빠져 있고, 그 옆 전선 피복도 벗겨져 있습니다.",ELEC_CABLE_DAMAGED|MACH_GUARD_ISSUE,ELEC_CABLE_DAMAGED|MACH_GUARD_ISSUE,기계|전기,기계|전기,True,True,True,False,False,True,False,0,2,0,0,6.490530499999295,True,,
+C075,normal,,산소 용기가 고정 없이 서 있고 캡도 없습니다.,GAS_CYLINDER_STORAGE|GAS_CYLINDER_UNSECURED,CHEM_CONTAINER_OPEN|GAS_CYLINDER_UNSECURED,가스,화학물질,False,False,False,False,False,True,False,0,1,1,1,5.951635900000838,True,,놓친 위험요인: GAS_CYLINDER_STORAGE / 잘못 추가한 위험요인: CHEM_CONTAINER_OPEN / 위험유형 불일치: 예측 ['화학물질'] / 정답 ['가스']
+C076,normal,,배전반 앞과 소화기 앞에 박스가 쌓여 있습니다.,ELEC_PANEL_BLOCKED|FIRE_EXTINGUISHER_ISSUE,ELEC_PANEL_BLOCKED|FIRE_EXTINGUISHER_ISSUE,전기|화재,전기|화재,True,True,True,False,False,True,False,1,2,0,0,6.397543200000655,True,,근거 인용이 원문에 없음: 1건
+C077,normal,,"사다리가 흔들거리고, 사다리 올라가는 사람이 안전모를 안 썼습니다.",FALL_LADDER_UNSTABLE|PPE_NOT_WORN,FALL_LADDER_UNSTABLE|PPE_NOT_WORN,보호구|추락,보호구|추락,True,True,True,False,False,True,False,0,2,0,0,6.292100000002392,True,,
+C078,normal,,"펌프에서 평소와 다른 진동이 있고, 펌프 아래 바닥에 윤활유가 번져 미끄럽습니다.",MACH_ABNORMAL_NOISE|SLIP_FLOOR_WET,MACH_ABNORMAL_NOISE|SLIP_FLOOR_WET,기계|넘어짐,기계|넘어짐,True,True,True,False,False,True,False,0,2,0,0,6.461488000000827,True,,
+C079,normal,,"지게차 통로에 파렛트가 나와 있고, 바닥 배수구 덮개도 깨져 있어요.",TRIP_FLOOR_DAMAGED|TRIP_WALKWAY_OBSTRUCTED,TRIP_FLOOR_DAMAGED|TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,2,0,0,6.192511099998228,True,,
+C080,normal,,"접착제 캔이 열려 있고, 국소배기 팬이 꺼져 있습니다.",CHEM_CONTAINER_OPEN|VENT_LEV_MALFUNCTION,CHEM_CONTAINER_OPEN|VENT_LEV_MALFUNCTION,화학물질|환기,화학물질|환기,True,True,True,False,False,True,False,0,2,0,0,6.454680900002131,True,,
+C081,hard,복합,"도장실 들어가 보니 배기팬은 멈춰 있고, 시너 통 두 개 뚜껑이 열려 있었고, 하나는 라벨이 없었습니다. 입구 소화기 앞에도 페인트 캔이 쌓여 있어요.",CHEM_CONTAINER_OPEN|CHEM_LABEL_MISSING|FIRE_EXTINGUISHER_ISSUE|VENT_LEV_MALFUNCTION,CHEM_CONTAINER_OPEN|CHEM_LABEL_MISSING|FIRE_EXTINGUISHER_ISSUE,화재|화학물질|환기,화재|화학물질,False,False,False,False,False,True,False,1,3,0,1,8.106812099998933,True,,"놓친 위험요인: VENT_LEV_MALFUNCTION / 위험유형 불일치: 예측 ['화재', '화학물질'] / 정답 ['화재', '화학물질', '환기'] / 근거 인용이 원문에 없음: 1건"
+C082,hard,복합,"용접부스에 아세틸렌 용기가 묶여 있지 않고, 용접기 케이블 피복이 찢어져 있고, 바로 옆에 기름 걸레가 있습니다.",ELEC_CABLE_DAMAGED|FIRE_FLAMMABLE_NEAR_IGNITION|GAS_CYLINDER_UNSECURED,ELEC_CABLE_DAMAGED|GAS_CYLINDER_UNSECURED|SLIP_FLOOR_WET,가스|전기|화재,가스|넘어짐|전기,False,False,False,False,False,True,False,0,2,1,1,7.880228700003499,True,,"놓친 위험요인: FIRE_FLAMMABLE_NEAR_IGNITION / 잘못 추가한 위험요인: SLIP_FLOOR_WET / 위험유형 불일치: 예측 ['가스', '넘어짐', '전기'] / 정답 ['가스', '전기', '화재']"
+C083,hard,복합,창고 정리가 안 돼서 통로에 자재가 나와 있고 배전반 앞도 막혔어요. 위쪽 선반 자재 내리는 사다리도 한쪽 다리가 짧아 기우뚱합니다.,ELEC_PANEL_BLOCKED|FALL_LADDER_UNSTABLE|TRIP_WALKWAY_OBSTRUCTED,ELEC_PANEL_BLOCKED|FALL_LADDER_UNSTABLE|TRIP_WALKWAY_OBSTRUCTED,넘어짐|전기|추락,넘어짐|전기,False,True,False,False,False,True,False,0,3,0,0,8.294571099999303,True,,"위험유형 불일치: 예측 ['넘어짐', '전기'] / 정답 ['넘어짐', '전기', '추락']"
+C084,hard,복합,"프레스 2호기 비상정지가 반응이 늦고, 덮개 한쪽이 없고, 작업자 두 명이 귀마개를 안 했습니다.",MACH_ESTOP_ISSUE|MACH_GUARD_ISSUE|PPE_NOT_WORN,MACH_ESTOP_ISSUE|MACH_GUARD_ISSUE|PPE_NOT_WORN,기계|보호구,기계|보호구,True,True,True,False,False,True,False,0,3,0,0,7.454250599999796,True,,
+C085,hard,복합|모호,"보일러실 바닥에 물이 고여 있고, 가스 냄새가 약간 나는 것 같고, 제어반 문도 열려 있습니다.",ELEC_PANEL_OPEN|GAS_LEAK_SUSPECTED|SLIP_FLOOR_WET,ELEC_PANEL_OPEN|FIRE_FLAMMABLE_NEAR_IGNITION,가스|넘어짐|전기,전기|화재,False,False,False,False,False,True,False,0,1,1,2,7.1904678999999305,True,,"놓친 위험요인: GAS_LEAK_SUSPECTED,SLIP_FLOOR_WET / 잘못 추가한 위험요인: FIRE_FLAMMABLE_NEAR_IGNITION / 위험유형 불일치: 예측 ['전기', '화재'] / 정답 ['가스', '넘어짐', '전기']"
+C086,hard,복합,메자닌 난간 일부 빠져 있고 그 아래 통로에 자재 쌓여 있음. 메자닌 위 작업자 안전모 미착용.,FALL_OPENING_UNGUARDED|PPE_NOT_WORN|TRIP_WALKWAY_OBSTRUCTED,FALL_OPENING_UNGUARDED|PPE_NOT_WORN|TRIP_WALKWAY_OBSTRUCTED,넘어짐|보호구|추락,넘어짐|추락,False,True,False,False,False,True,False,0,3,0,0,8.045948700000736,True,,"위험유형 불일치: 예측 ['넘어짐', '추락'] / 정답 ['넘어짐', '보호구', '추락']"
+C087,hard,모호,약품창고 바닥에 뭔가 젖어 있는데 물인지 약품인지 모르겠습니다.,CHEM_LEAK_SUSPECTED|SLIP_FLOOR_WET,CHEM_LEAK_SUSPECTED|SLIP_FLOOR_WET,넘어짐|화학물질,넘어짐|화학물질,True,True,True,True,False,False,False,0,2,0,0,6.839297099999385,True,,정보부족 판정 불일치: 예측 False / 정답 True
+C088,hard,모호,가공동 쪽에서 타는 냄새가 잠깐 났는데 어디서 나는지는 못 찾았습니다.,UNKNOWN_NEEDS_CHECK,CHEM_LEAK_SUSPECTED|GAS_LEAK_SUSPECTED,확인필요,가스|화학물질,False,False,False,True,True,True,False,0,0,2,1,6.994222200002696,True,,"놓친 위험요인: UNKNOWN_NEEDS_CHECK / 잘못 추가한 위험요인: CHEM_LEAK_SUSPECTED,GAS_LEAK_SUSPECTED / 위험유형 불일치: 예측 ['가스', '화학물질'] / 정답 ['확인필요']"
+C089,hard,모호,사출기 근처가 좀 이상한 느낌입니다. 확인 부탁드려요.,UNKNOWN_NEEDS_CHECK,UNKNOWN_NEEDS_CHECK,확인필요,확인필요,True,True,True,True,True,True,False,0,1,0,0,5.159523899998021,True,,
+C090,hard,모호,컴프레서실에서 소리가 나는데 원래 나는 소리인지 잘 모르겠어요.,MACH_ABNORMAL_NOISE,MACH_ABNORMAL_NOISE,기계,기계,True,True,True,True,True,True,False,0,1,0,0,5.817354900002101,True,,
+C091,hard,모호,세척조 배기가 약한 것 같기도 하고 아닌 것 같기도 합니다. 냄새가 평소보다 조금 더 나요.,VENT_LEV_MALFUNCTION,CHEM_LEAK_SUSPECTED|VENT_LEV_MALFUNCTION,환기,환기,True,False,False,True,False,False,False,0,1,1,0,6.41889269999956,True,,잘못 추가한 위험요인: CHEM_LEAK_SUSPECTED / 정보부족 판정 불일치: 예측 False / 정답 True
+C092,hard,부정문,가스 용기는 전부 체인으로 고정돼 있고 캡도 씌워져 있습니다. 누출 냄새도 없습니다.,NONE,CHEM_CONTAINER_OPEN|GAS_CYLINDER_UNSECURED,정상,가스|화학물질,False,False,False,False,True,False,False,2,0,2,1,6.026107599998795,True,,"놓친 위험요인: NONE / 잘못 추가한 위험요인: CHEM_CONTAINER_OPEN,GAS_CYLINDER_UNSECURED / 위험유형 불일치: 예측 ['가스', '화학물질'] / 정답 ['정상'] / 정보부족 판정 불일치: 예측 True / 정답 False / 근거 인용이 원문에 없음: 2건"
+C093,hard,부정문,연삭기 덮개는 정상적으로 장착돼 있습니다. 다만 작업자가 보안경을 안 쓰고 있었습니다.,PPE_NOT_WORN,PPE_NOT_WORN,보호구,보호구,True,True,True,False,False,True,False,0,1,0,0,5.6461584999997285,True,,
+C094,hard,부정문,비상정지 버튼 테스트했는데 정상 작동했습니다. 배전반 앞도 비어 있고요. 그런데 라인 옆 통로에 부품 상자가 나와 있었어요.,TRIP_WALKWAY_OBSTRUCTED,TRIP_WALKWAY_OBSTRUCTED,넘어짐,넘어짐,True,True,True,False,False,True,False,0,1,0,0,5.711163800002396,True,,
+C095,hard,부정문,"도장부스 배기는 잘 되고 시너 통도 다 닫혀 있는데, 소화기가 하나 안 보입니다.",FIRE_EXTINGUISHER_ISSUE,FIRE_EXTINGUISHER_ISSUE,화재,화재,True,True,True,False,False,True,False,0,1,0,0,5.52964620000057,True,,
+C096,hard,부정문,"바닥이 미끄럽지는 않고, 파손된 곳도 없습니다. 특별한 위험은 못 봤습니다.",NONE,NONE,정상,정상,True,True,True,False,False,True,False,0,1,0,0,4.850852899999154,True,,
+C097,hard,정보부족,저쪽 기계 덮개가 빠져 있어요.,MACH_GUARD_ISSUE,UNKNOWN_NEEDS_CHECK,기계,확인필요,False,False,False,True,True,True,False,0,0,1,1,4.967192799998884,True,,놓친 위험요인: MACH_GUARD_ISSUE / 잘못 추가한 위험요인: UNKNOWN_NEEDS_CHECK / 위험유형 불일치: 예측 ['확인필요'] / 정답 ['기계']
+C098,hard,정보부족,위험해 보이는 게 있어서 사진 찍었습니다.,UNKNOWN_NEEDS_CHECK,UNKNOWN_NEEDS_CHECK,확인필요,확인필요,True,True,True,True,True,True,False,0,1,0,0,5.004427399999258,True,,
+C099,hard,정보부족,확인 필요.,UNKNOWN_NEEDS_CHECK,UNKNOWN_NEEDS_CHECK,확인필요,확인필요,True,True,True,True,True,True,False,0,1,0,0,4.667018799998914,True,,
+C100,hard,정보부족,배전반 앞에 뭐가 있어요.,ELEC_PANEL_BLOCKED,ELEC_PANEL_BLOCKED,전기,전기,True,True,True,True,False,False,False,0,1,0,0,5.498951099998521,True,,정보부족 판정 불일치: 예측 False / 정답 True

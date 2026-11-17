@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": "C001",
+    "audio": "C001.wav",
+    "reference_text": "조립2라인 배전반 앞에 빈 박스랑 팔레트가 쌓여 있어서 배전반 문을 열 수가 없습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C015",
+    "audio": "C015.wav",
+    "reference_text": "CNC 3호기 앞 바닥에 절삭유가 고여서 미끄럽습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C021",
+    "audio": "C021.wav",
+    "reference_text": "세척실에 있는 20리터 말통 두 개에 아무 표시가 없어서 무슨 액체인지 모르겠습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C033",
+    "audio": "C033.wav",
+    "reference_text": "2라인 비상정지 버튼을 눌렀는데 라인이 바로 안 멈췄습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C048",
+    "audio": "C048.wav",
+    "reference_text": "보일러실 가스 배관 근처에서 가스 냄새가 납니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C063",
+    "audio": "C063.wav",
+    "reference_text": "연삭 작업자가 보안경 없이 작업하고 있습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C071",
+    "audio": "C071.wav",
+    "reference_text": "CNC 2호기 앞 바닥에 절삭유가 흘러 있고 칩 박스가 통로에 나와 있습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C081",
+    "audio": "C081.wav",
+    "reference_text": "도장실 들어가 보니 배기팬은 멈춰 있고, 시너 통 두 개 뚜껑이 열려 있었고, 하나는 라벨이 없었습니다. 입구 소화기 앞에도 페인트 캔이 쌓여 있어요.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C087",
+    "audio": "C087.wav",
+    "reference_text": "약품창고 바닥에 뭔가 젖어 있는데 물인지 약품인지 모르겠습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  },
+  {
+    "case_id": "C093",
+    "audio": "C093.wav",
+    "reference_text": "연삭기 덮개는 정상적으로 장착돼 있습니다. 다만 작업자가 보안경을 안 쓰고 있었습니다.",
+    "source": "합성 음성(Windows TTS: Microsoft Heami Desktop)",
+    "is_real_recording": false
+  }
+]

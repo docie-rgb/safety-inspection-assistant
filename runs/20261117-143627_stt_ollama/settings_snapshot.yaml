@@ -1,0 +1,69 @@
+# Safety Inspection Assistant 설정 파일
+# 코드에 고정하지 않을 값(경로, 모델, 임계값, 판정 기준)을 모두 여기에 둡니다.
+
+paths:
+  taxonomy: config/taxonomy.yaml
+  cases: data/cases.jsonl          # 모델 입력(정답 없음)
+  gold: data/gold.jsonl            # 사전 정답(모델 실행 전 고정)
+  gold_lock: data/GOLD_LOCK.json   # 정답 파일 SHA-256 고정 기록
+  prompts_dir: prompts
+  runs_dir: runs                   # 실험 결과(실행마다 새 폴더, 덮어쓰지 않음)
+  records_dir: records             # UI 신고 기록(사건별 폴더)
+  audio_dir: data/audio            # STT 시험용 오디오
+
+llm:
+  default_backend: ollama          # rule | ollama | anthropic
+  prompt_file: system_v1.md
+  backends:
+    ollama:
+      # 로컬 실행: 입력 텍스트가 이 PC 밖으로 나가지 않습니다.
+      base_url: http://localhost:11434
+      model: qwen3.5:4b
+      execution_location: 로컬 PC (Ollama, GPU/CPU)
+      data_transfer: 없음 (localhost)
+      license: Apache-2.0 (ollama show --license 로 확인)
+      temperature: 0
+      think: false
+      num_ctx: 8192
+      timeout_sec: 180
+    anthropic:
+      # 외부 API: 입력 텍스트가 Anthropic 서버로 전송됩니다. API 키는 환경변수로만 받습니다.
+      base_url: https://api.anthropic.com/v1/messages
+      model: claude-haiku-5-5
+      api_key_env: ANTHROPIC_API_KEY
+      execution_location: 외부 클라우드 API (Anthropic)
+      data_transfer: 신고 원문·장소가 외부로 전송됨
+      license: Anthropic 상용 이용약관 (API)
+      temperature: 0
+      max_tokens: 2000
+      timeout_sec: 120
+
+rule:
+  # 문장(또는 절)에 아래 표현이 있으면 그 문장/절의 위험 키워드를 부정된 것으로 봅니다.
+  negation_markers: ["정상", "이상 없", "문제 없", "특이사항 없", "비어 있", "닫혀 있", "고정돼 있", "씌워져 있", "장착돼 있", "잘 되", "지는 않", "지 않습니다", "못 봤"]
+  # 위험요인이 없고 아래 표현이 있으면 정상 보고로 봅니다.
+  normal_markers: ["특이사항 없", "이상 없", "이상없", "문제 없", "발견되지 않", "정상", "위험은 못 봤"]
+  # 아래 표현이 있으면 정보 부족(확인 필요)으로 봅니다.
+  uncertainty_markers: ["모르겠", "것 같기도", "인지", "확인 부탁", "확인 필요", "애매", "같기도", "이상한 느낌", "뭔가", "뭐가"]
+
+analysis:
+  # 텍스트가 이 길이(공백 제외)보다 짧으면 위험요인을 추측하지 않고 확인 필요로 처리합니다.
+  min_text_chars: 2
+  # 원문에 없는데 출력에 등장하면 "사실 추가 의심"으로 표시하는 표현(자동 휴리스틱, 사람 검토 필요)
+  fabrication_terms: ["부상", "다쳤", "다침", "다친", "사고가 발생", "사고 발생", "재해", "위반", "법령", "법 ", "산업안전보건법", "과태료", "벌금", "사망", "화상", "골절", "중독", "폭발했", "화재가 발생"]
+  # 근거 인용(evidence)이 원문에 있는지 볼 때 무시할 문자
+  evidence_ignore_chars: " \t\n.,!?\"'·…"
+
+stt:
+  engine: faster-whisper
+  model_size: small               # tiny | base | small | medium (클수록 정확하지만 느리고 무거움)
+  language: ko
+  device: auto                    # auto | cuda | cpu (auto: cuda 실패 시 cpu)
+  compute_type_cuda: float16
+  compute_type_cpu: int8
+  beam_size: 5
+
+report:
+  disclaimer: >-
+    본 신고서는 교육용 PoC가 생성한 최초 위험요인 신고서 초안입니다. 위험유형·위험요인·개선조치는 검토용 후보이며,
+    법적 적합성 판정이 아닙니다. 최종 판단은 안전관리자가 합니다. 첨부 사진은 AI가 분석하지 않았습니다.

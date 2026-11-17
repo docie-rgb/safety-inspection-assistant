@@ -1,0 +1,102 @@
+[2026-11-17T14:26:40] 시작: method=rule cases=100 dir=20261117-142640_rule
+[2026-11-17T14:26:40] C001 full=True insuff=True t=0.014s 
+[2026-11-17T14:26:40] C002 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C003 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C004 full=True insuff=True t=0.001s 
+[2026-11-17T14:26:40] C005 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C006 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C007 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C008 full=False insuff=True t=0.000s 잘못 추가한 위험요인: MACH_GUARD_ISSUE / 위험유형 불일치: 예측 ['기계', '전기'] / 정답 ['전기']
+[2026-11-17T14:26:40] C009 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C010 full=True insuff=False t=0.000s 정보부족 판정 불일치: 예측 True / 정답 False
+[2026-11-17T14:26:40] C011 full=True insuff=True t=0.001s 
+[2026-11-17T14:26:40] C012 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C013 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C014 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C015 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C016 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C017 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C018 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C019 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C020 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C021 full=True insuff=False t=0.000s 정보부족 판정 불일치: 예측 True / 정답 False
+[2026-11-17T14:26:40] C022 full=True insuff=True t=0.001s 
+[2026-11-17T14:26:40] C023 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C024 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C025 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C026 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C027 full=False insuff=True t=0.000s 잘못 추가한 위험요인: FIRE_FLAMMABLE_NEAR_IGNITION / 위험유형 불일치: 예측 ['화재', '화학물질'] / 정답 ['화학물질']
+[2026-11-17T14:26:40] C028 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C029 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C030 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C031 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C032 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C033 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C034 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C035 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C036 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C037 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C038 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C039 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C040 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C041 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C042 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C043 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C044 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C045 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C046 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C047 full=False insuff=False t=0.000s 놓친 위험요인: GAS_CYLINDER_STORAGE / 잘못 추가한 위험요인: UNKNOWN_NEEDS_CHECK / 위험유형 불일치: 예측 ['확인필요'] / 정답 ['가스'] / 정보부족 판정 불일치: 예측 T
+[2026-11-17T14:26:40] C048 full=False insuff=True t=0.000s 잘못 추가한 위험요인: CHEM_LEAK_SUSPECTED / 위험유형 불일치: 예측 ['가스', '화학물질'] / 정답 ['가스']
+[2026-11-17T14:26:40] C049 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C050 full=False insuff=False t=0.000s 잘못 추가한 위험요인: MACH_ABNORMAL_NOISE / 위험유형 불일치: 예측 ['가스', '기계'] / 정답 ['가스'] / 정보부족 판정 불일치: 예측 True / 정답 False
+[2026-11-17T14:26:40] C051 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C052 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C053 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C054 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C055 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C056 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C057 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C058 full=False insuff=True t=0.000s 잘못 추가한 위험요인: MACH_GUARD_ISSUE / 위험유형 불일치: 예측 ['기계', '추락'] / 정답 ['추락']
+[2026-11-17T14:26:40] C059 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C060 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C061 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C062 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C063 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C064 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C065 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C066 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C067 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C068 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C069 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C070 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C071 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C072 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C073 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C074 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C075 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C076 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C077 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C078 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C079 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C080 full=False insuff=True t=0.000s 놓친 위험요인: CHEM_CONTAINER_OPEN / 위험유형 불일치: 예측 ['환기'] / 정답 ['화학물질', '환기']
+[2026-11-17T14:26:40] C081 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C082 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C083 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C084 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C085 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C086 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C087 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C088 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C089 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C090 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C091 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C092 full=False insuff=True t=0.000s 놓친 위험요인: NONE / 잘못 추가한 위험요인: GAS_LEAK_SUSPECTED / 위험유형 불일치: 예측 ['가스'] / 정답 ['정상']
+[2026-11-17T14:26:40] C093 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C094 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C095 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C096 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C097 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C098 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C099 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] C100 full=True insuff=True t=0.000s 
+[2026-11-17T14:26:40] 완료: 정답 일치 92/100, 위험유형 일치 92, 위험요인 일치 92, 사실추가 의심 0, 오류 0

@@ -17,15 +17,25 @@ llm:
   backends:
     ollama:
       # 로컬 실행: 입력 텍스트가 이 PC 밖으로 나가지 않습니다.
-      base_url: http://localhost:11434
+      # 127.0.0.1 사용: 이 PC 에서 'localhost' 는 IPv6(::1) 시도 후 넘어가느라 요청마다 약 2.04초가 더 걸렸습니다(2026-11-17 측정).
+      base_url: http://127.0.0.1:11434
       model: qwen3.5:4b
       execution_location: 로컬 PC (Ollama, GPU/CPU)
       data_transfer: 없음 (localhost)
       license: Apache-2.0 (ollama show --license 로 확인)
       temperature: 0
       think: false
-      num_ctx: 8192
-      timeout_sec: 180
+      # 2026-11-17 진단: 프롬프트 약 1,040 토큰 + 출력 약 200~250 토큰 → 4096 이면 충분(KV 캐시 VRAM 절약).
+      # 이전 평가 실행(runs/20261117-142651_ollama)은 8192 로 실행됐으며 그 설정은 실행 폴더에 보존돼 있습니다.
+      num_ctx: 4096
+      num_predict: 1024             # 출력 토큰 상한(반복 생성 폭주 방지). 정상 출력은 약 200~300 토큰
+      keep_alive: 30m               # 모델을 GPU 에 유지해 매 요청마다 다시 불러오지 않음(냉시작 약 15초)
+      # 스트리밍으로 받으며 "멈춤"을 감지합니다. 제한 시간을 늘리는 대신 진행이 없으면 빨리 실패시키고
+      # 규칙 기반/수동 작성으로 넘어갈 수 있게 합니다.
+      connect_timeout_sec: 5
+      first_token_timeout_sec: 60   # 모델 로딩(냉시작) + 프롬프트 처리까지 허용 시간
+      stall_timeout_sec: 20         # 토큰 사이에 이 시간 동안 아무것도 오지 않으면 멈춤으로 판단
+      max_total_sec: 90             # 전체 상한(정상 측정치: 냉시작 약 26초, 예열 후 약 12초)
     anthropic:
       # 외부 API: 입력 텍스트가 Anthropic 서버로 전송됩니다. API 키는 환경변수로만 받습니다.
       base_url: https://api.anthropic.com/v1/messages
@@ -62,6 +72,11 @@ stt:
   compute_type_cuda: float16
   compute_type_cpu: int8
   beam_size: 5
+  # 화면에서는 STT를 별도 프로세스로 실행하고, 이 시간 안에 끝나지 않으면 종료 후 텍스트 입력으로 안내합니다.
+  # (네이티브 라이브러리가 멈추면 같은 프로세스 안에서는 중단할 수 없기 때문)
+  # 실제 제한 = max(min_timeout_sec, 오디오 길이 × timeout_per_audio_sec)
+  min_timeout_sec: 60
+  timeout_per_audio_sec: 4
 
 report:
   disclaimer: >-

@@ -1,0 +1,7 @@
+# Python 3.11 에서 확인. 라이선스는 docs/technology_selection.md 참고.
+streamlit==1.67.0        # Apache-2.0  (웹 UI)
+faster-whisper==1.2.1    # MIT         (로컬 STT, CTranslate2 기반)
+PyYAML==6.0.3            # MIT         (설정 파일)
+requests==2.34.2         # Apache-2.0  (Ollama / 외부 API 호출)
+# 별도 설치(파이썬 패키지 아님):
+#   Ollama (MIT)  https://ollama.com  +  모델: ollama pull qwen3.5:4b  (Apache-2.0)

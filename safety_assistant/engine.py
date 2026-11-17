@@ -64,8 +64,40 @@ def analyze(text: str, location: str = "", backend: str | None = None) -> dict:
             rec["is_ai_inference"] = True
         except Exception as e:  # noqa: BLE001  실패도 기록으로 남깁니다.
             rec["error"] = f"{type(e).__name__}: {e}"
+            rec["error_diagnostics"] = getattr(e, "diagnostics", None)
             rec["output"] = empty_output(text)
             rec["output"]["missing_information"] = ["AI 분석 실패 — 수동 작성 필요"]
     rec["elapsed_sec"] = time.perf_counter() - t0
     rec["checks"] = check_output(text, location, rec["output"])
     return rec
+
+
+MANUAL_INFO = {
+    "backend": "manual",
+    "model": "-",
+    "execution_location": "사용자 직접 작성",
+    "data_transfer": "없음",
+    "license": "-",
+}
+
+
+def manual_result(text: str, location: str = "") -> dict:
+    """AI·규칙 분석 없이 사용자가 직접 작성하도록 빈 양식을 만듭니다(추론 없음)."""
+    out = empty_output(text)
+    out["missing_information"] = ["수동 작성 — 위험요인·위험유형을 직접 입력하세요"]
+    out["review_required"] = True
+    return {
+        "backend": "manual",
+        "is_ai_inference": False,
+        "started_at_utc": datetime.now(timezone.utc).isoformat(),
+        "input": {"text": text, "location": location},
+        "info": MANUAL_INFO,
+        "output": out,
+        "raw_output": None,
+        "backend_meta": None,
+        "problems": [],
+        "error": None,
+        "note": "수동 작성 선택: 추론하지 않음",
+        "elapsed_sec": 0.0,
+        "checks": check_output(text, location, out),
+    }

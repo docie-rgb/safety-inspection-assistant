@@ -1,0 +1,37 @@
+{
+  "method": "ollama",
+  "limit": null,
+  "note": "qwen3.5:4b think=false, prompt system_v1, 최초 실행",
+  "started_at": "2026-11-17T14:26:51.759907",
+  "git_commit": "32aaaba2dcba7006560fd086af054eda17301a60",
+  "gold_lock": {
+    "locked_at_utc": "2026-11-17T05:24:01.874405+00:00",
+    "note": "모델 실행 전에 고정한 사전 정답. 평가 스크립트는 이 해시와 다르면 실행을 중단합니다.",
+    "taxonomy_version": "taxonomy_v1",
+    "files": {
+      "data/cases.jsonl": "c7c496870fbefb10c42f024ec9b0f99d50db0906a06718e44d5e522aea600678",
+      "data/gold.jsonl": "2da61695669ac2180720b743f94962980c39562a8fefee969334cb8b781fb770"
+    }
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "backend_info": {
+    "backend": "ollama",
+    "model": "qwen3.5:4b",
+    "execution_location": "로컬 PC (Ollama, GPU/CPU)",
+    "data_transfer": "없음 (localhost)",
+    "license": "Apache-2.0 (ollama show --license 로 확인)"
+  },
+  "backend_settings": {
+    "base_url": "http://localhost:11434",
+    "model": "qwen3.5:4b",
+    "execution_location": "로컬 PC (Ollama, GPU/CPU)",
+    "data_transfer": "없음 (localhost)",
+    "license": "Apache-2.0 (ollama show --license 로 확인)",
+    "temperature": 0,
+    "think": false,
+    "num_ctx": 8192,
+    "timeout_sec": 180
+  },
+  "prompt_file": "prompts\\system_v1.md",
+  "prompt_sha256": "740799a9fceacdaeb954d0f7507769027f98685f429cfd60f7ce616779f38974"
+}
