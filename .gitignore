@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+# 사용자가 UI에서 만든 신고 기록과 사진은 저장소에 넣지 않습니다.
+records/*
+!records/.gitkeep
+# STT 모델 캐시
+models/
+.streamlit/secrets.toml
