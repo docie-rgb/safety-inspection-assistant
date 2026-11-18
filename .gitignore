@@ -8,3 +8,6 @@ records/*
 # STT 모델 캐시
 models/
 .streamlit/secrets.toml
+
+# 외부 공개 데이터 원본(공공누리 제3유형 등 재배포 조건 확인 전에는 저장소에 넣지 않음)
+external_data/
